@@ -18,7 +18,7 @@ import json
 import re
 from pathlib import Path
 
-from ideagraph_core import ACCEPTED, DETAIL, ROOT_KIND
+from idea_graph_core import ACCEPTED, DETAIL, ROOT_KIND
 
 __version__ = "0.1.0"
 

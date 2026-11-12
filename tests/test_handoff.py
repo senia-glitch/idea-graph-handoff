@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-from ideagraph_core import HUMAN, Store
-from ideagraph_handoff import FILE_NAME, build, manifest, run
+from idea_graph_core import HUMAN, Store
+from idea_graph_handoff import FILE_NAME, build, manifest, run
 
 
 class Ctx:

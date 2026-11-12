@@ -3,24 +3,24 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ideagraph-handoff"
+name = "idea-graph-handoff"
 version = "0.1.0"
 description = "Передача графа идеи в pacage-studio-ide, без модели"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["ideagraph-core @ git+https://github.com/senia-glitch/idea-graph-core.git"]
+dependencies = ["idea-graph-core @ git+https://github.com/senia-glitch/idea-graph-core.git"]
 
 [project.optional-dependencies]
 test = ["pytest"]
 
-[project.entry-points."ideagraph.packages"]
-handoff = "ideagraph_handoff:manifest"
+[project.entry-points."idea_graph.packages"]
+handoff = "idea_graph_handoff:manifest"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-ideagraph_handoff = ["*.md"]
+idea_graph_handoff = ["*.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
