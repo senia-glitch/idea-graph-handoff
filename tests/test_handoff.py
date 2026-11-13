@@ -18,7 +18,7 @@ def store(tmp_path):
         {"op": "add_card", "kind": "ветка", "title": "Функции", "parent": "c1", "ref": "f"},
         {"op": "add_card", "kind": "решение", "title": "Онлайн-запись", "body": "Пациент видит окна", "parent": "@f"},
         {"op": "add_card", "kind": "решение", "title": "Напоминание за сутки", "parent": "@f",
-         "decision": {"assumption": True, "by": "decider", "chosen": {"type": "custom", "value": "за сутки"}}},
+         "decision": {"assumption": True, "by": "decider", "chosen": {"type": "choice", "indexes": [], "values": [], "text": "за сутки", "value": "за сутки"}}},
         {"op": "add_card", "kind": "ветка", "title": "Интерфейс", "parent": "c1", "ref": "ui"},
         {"op": "add_card", "kind": "решение", "title": "Экран расписания врача", "body": "Сетка окон на 14 дней", "parent": "@ui"},
         {"op": "add_card", "kind": "граница", "title": "Мобильное приложение не делаем", "parent": "c1"},
